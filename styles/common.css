@@ -7,3 +7,10 @@
 	background-image: url(../images/icon-common.png);
 	background-repeat: no-repeat;
 }
+.hot a:link, .hot a:visited, .openBuy a:link, .openBuy a:visited {
+	color: #aab2bd;
+}
+.hot a:hover, .openBuy a:hover{
+	color: #000;
+	text-decoration: underline;
+}
