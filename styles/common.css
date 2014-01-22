@@ -1,0 +1,9 @@
+.container {
+	position: relative;
+	margin: 0 auto;
+	width: 1190px;
+}
+.icon-common {
+	background-image: url(../images/icon-common.png);
+	background-repeat: no-repeat;
+}

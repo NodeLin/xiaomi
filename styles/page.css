@@ -1,0 +1,62 @@
+.wrap {
+	text-align: center;
+	width: 100%;
+}
+.header {
+	margin-bottom: 10px;
+	height: 155px;
+}
+.header .top {
+	position: relative;
+	width: 1190px;
+	height: 110px;
+}
+.header .top .logo {
+	position: absolute;
+	left: 0;
+	top: 30px;
+	height: 61px;
+}
+.header .top .logo .logo-iconCommon-logo {
+	width: 143px;
+	height: 61px;
+	background-position: 0 0;
+}
+.header .top .right {
+	padding-top: 40px;
+	height: 70px;
+	width: 1190px;
+}
+.header .top .right .menu {
+	float: right;
+	padding-right: 100px;
+	width: 315px;
+	height: 20px;
+}
+.header .top .right .menu ul li {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	width: 95px;
+	height: 16px;
+	border-right: 1px solid #ccd1d9;
+}
+.header .top .right .menu ul li #right-menu-lang {
+	margin-right: 5px;
+	background-position: -49px -70px;
+}
+.header .top .right .menu ul li #right-menu-lang span {
+	padding-right: 25px;
+	background-position: -40px -65px;
+}
+.header .top .right .menu ul li label a:hover {
+	color: #F84858;
+}
+.header .top .right .menu ul li label i {
+	width: 16px;
+	height: 16px;
+	vertical-align: -3px;
+	*vertical-align: 0;
+	*padding-right: 3px;
+	background-position: -20px -65px;
+}
