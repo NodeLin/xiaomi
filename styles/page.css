@@ -2,9 +2,10 @@
 	text-align: center;
 	width: 100%;
 }
+/* S header */
 .header {
 	margin-bottom: 10px;
-	height: 155px;
+	height: 110px;
 }
 .header .top {
 	position: relative;
@@ -36,7 +37,7 @@
 .header .top .right .menu ul li {
 	display: inline-block;
 	*display: inline;
-	zoom: 1;
+	*zoom: 1;
 	width: 95px;
 	height: 16px;
 	border-right: 1px solid #ccd1d9;
@@ -130,3 +131,92 @@
 .header .top .right .openBuy a:hover {
 	background-position: -2px -82px;
 }
+.header .top .right .carts {
+	position: absolute;
+	right: 6px;
+	top: 33px;
+	width: 108px;
+	height: 40px;
+	line-height: 40px;
+}
+.header .top .right .carts a i {
+	margin: 0 8px -1px 0;
+	width: 16px;
+	height: 13px;
+	background-position: -294px -53px ;
+	*margin: 12px 8px 12px 0;
+	*vertical-align: middle;
+}
+/* E header */
+/* S nav */
+.nav {
+	position: relative;
+	width: 1190px;
+	height: 45px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+	-o-border-top-left-radius: 5px;
+	border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	-o-border-top-right-radius: 5px;
+	border-top-right-radius: 5px;
+	background: #dd4250;
+}
+.nav .clearfix .allWare {
+	float: left;
+	display: block;
+	width: 230px;
+	height: 45px;
+	line-height: 43px;
+	text-indent: -5em;
+	cursor: pointer;
+}
+.nav .clearfix .allWare a {
+	display: block;
+	width: 230px;
+	height: 45px;
+}
+.nav .clearfix ul li {
+	float: left;
+	height: 45px;
+	line-height: 43px;
+}
+.nav .clearfix ul li a {
+	display: inline-block;
+	padding: 0 12px;
+	height: 45px;
+	text-align: center;
+}
+.nav .clearfix ul li.selected {
+	background: #ed5466;
+}
+.nav .clearfix ul li:hover {
+	background: #ed5466;
+}
+.nav .showList {
+	position: absolute;
+	top: 48px;
+	*left: 0;
+	width: 230px;
+	height: 580px;
+}
+.nav .showList ul li {
+	width: 230px;
+	height: 40px;
+	line-height: 39px;
+	border-bottom: 1px solid #f4edd9;
+	background: #fffbea;
+	text-align: left;
+	text-indent: 1.2em;
+}
+.nav .showList ul li a {
+	display: block;
+	width: 230px;
+	height: 40px;
+	cursor: pointer;
+}
+.nav .showList ul li a:link, .nav .showList ul li a:visited {
+	color: #974c19;
+}
+/* E nav */

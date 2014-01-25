@@ -7,10 +7,19 @@
 	background-image: url(../images/icon-common.png);
 	background-repeat: no-repeat;
 }
-.hot a:link, .hot a:visited, .openBuy a:link, .openBuy a:visited {
+.hot a:link, .hot a:visited, 
+.openBuy a:link, .openBuy a:visited {
 	color: #aab2bd;
 }
 .hot a:hover, .openBuy a:hover{
 	color: #000;
 	text-decoration: underline;
+}
+.header .top .right .menu a:link, .header .top .right .menu a:visited, 
+.header .top .right .carts a:link, .header .top .right .carts a:visited {
+	color: #434a54;
+}
+.nav .clearfix .allWare a:link, .nav .clearfix .allWare a:visited,
+.nav .clearfix ul li a:link, .nav .clearfix ul li a:visited {
+	color: #fff;
 }
