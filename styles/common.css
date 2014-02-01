@@ -15,6 +15,10 @@
 	color: #000;
 	text-decoration: underline;
 }
+.header .top .right .menu ul li label a:hover,
+.header .top .right .menu ul li .right-menu-langList ul li a:hover {
+	color: #F84858;
+}
 .header .top .right .menu a:link, .header .top .right .menu a:visited, 
 .header .top .right .carts a:link, .header .top .right .carts a:visited {
 	color: #434a54;
@@ -22,4 +26,19 @@
 .nav .clearfix .allWare a:link, .nav .clearfix .allWare a:visited,
 .nav .clearfix ul li a:link, .nav .clearfix ul li a:visited {
 	color: #fff;
+}
+.main .content .slideBottom .xs-border-common {
+	float: left;
+	margin-left: 10px;
+}
+.main .content .slideBottom .xs-border-common a {
+	display: block;
+	width: 230px;
+	height: 150px;
+}
+.main .content .slideBottom .xs-border-common img {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
 }

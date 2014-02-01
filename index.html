@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="styles/base.css">
 		<link rel="stylesheet" href="styles/common.css">
 		<link rel="stylesheet" href="styles/page.css">
+		<link rel="shortcut icon" href="images/favicon.ico">
 		<!--[if lt IE 9]>
 		<script src="scripts/html5.js"></script>
 		<![endif]-->
@@ -34,8 +35,16 @@
 								<li>
 									<label id="right-menu-lang">
 										<i class="icon-common dib"></i>
-										<span class="icon-common">English</span>
+										<span class="right-menu-english icon-common">English</span>
 									</label>
+									<div class="right-menu-langList none">
+										<ul>
+											<li>简体中文<span class="icon-common"></span></li>	
+											<li><a href="#">English</a></li>
+											<li><a href="#">繁体台湾</a></li>
+											<li><a href="#">繁体香港</a></li>
+										</ul>
+									</div>
 								</li>
 								<li>
 									<label id="right-menu-storeApp">
@@ -54,7 +63,7 @@
 						</div>
 						<div class="search">
 								<form method="get" action="#">
-									<input class="search-frame-input" type="search" placeholder="小米手机2S" autocomple="off">
+									<input class="search-frame-input" type="search" placeholder="小米手机2S" value="小米手机2S" autocomple="off">
 									<input class="search-frame-btn" type="submit" value="搜索">
 									<label class="hot">
 										<a href="#">小米手机2S</a>
@@ -71,9 +80,12 @@
 						</div>
 						<div class="carts">
 							<form method="get" action="#">
-								<a href="#"><i class="icon-common dib"></i>购物车</a>	
+								<a href="#"><i class="icon-common dib"></i>购物车</a>
 							</form>
 						</div>
+						<div class="carts-num none">
+							<p>购物车中还没有商品，赶紧选购吧！</p>
+						</div>	
 					</div>
 					<!-- E right -->
 				</div>
@@ -99,18 +111,18 @@
 					<div class="showList f14">
 						<ul>
 							<li><a href="#">购买手机</a></li>
-							<li><a href="#">小米电视与盒子</a></li>
-							<li><a href="#">后盖与个性化配件</a></li>
-							<li><a href="#">保护套与贴膜</a></li>
-							<li><a href="#">移动电源与电池</a></li>
-							<li><a href="#">耳机与音箱</a></li>
-							<li><a href="#">小米路由器</a></li>
-							<li><a href="#">米兔玩偶</a></li>
-							<li><a href="#">小米生活方式</a></li>
-							<li><a href="#">存储与路由器</a></li>
-							<li><a href="#">手机优惠套餐</a></li>
-							<li><a href="#">按机型选配件</a></li>
-							<li><a href="#">特卖商品</a></li>
+							<li><a href="#">小米电视与盒子<i></i></a></li>
+							<li><a href="#">后盖与个性化配件<i></i></a></li>
+							<li><a href="#">保护套与贴膜<i></i></a></li>
+							<li><a href="#">移动电源与电池<i></i></a></li>
+							<li><a href="#">耳机与音箱<i></i></a></li>
+							<li><a href="#">小米路由器<i></i></a></li>
+							<li><a href="#">米兔玩偶<i></i></a></li>
+							<li><a href="#">小米生活方式<i></i></a></li>
+							<li><a href="#">存储与路由器<i></i></a></li>
+							<li><a href="#">手机优惠套餐<i></i></a></li>
+							<li><a href="#">按机型选配件<i></i></a></li>
+							<li><a href="#">特卖商品<i></i></a></li>
 							<li><a href="#">酷玩频道</a></li>
 						</ul>
 					</div>
@@ -118,6 +130,42 @@
 				<!-- E nav -->
 			</header>
 			<!-- E header -->
+			<!-- S main -->
+			<section class="main container">
+				<div class="content">
+					<div class="slide">
+						<ul>
+							<li><a href="#"><img src="images/slide01.jpg" alt="《我们的时代》首映"></a></li>
+							<li><a href="#"><img src="images/slide02.jpg" alt="春节手机预约"></a></li>
+							<li><a href="#"><img src="images/slide03.jpg" alt="小米2S免预约"></a></li>
+						</ul>
+						<a class="slide-left" href="#" title="Prev">Previous</a>
+						<a class="slide-right" href="#" title="Next">Next</a>
+					</div>
+					<div class="slideBottom">
+						<div class="xs-border-common remove-ml">
+							<a href="#"><img src="images/2s0126.jpg" alt="买小米2S送100元配件"></a>
+						</div>
+						<div class="xs-border-common">
+							<a href="#"><img src="images/f20140126.jpg" alt="F马快跑"></a>
+						</div>
+						<div class="xs-border-common">
+							<a href="#"><img src="images/xmweiyi124.jpg" alt="新年新卫衣"></a>
+						</div>
+						<div class="xs-border-common">
+							<a href="#"><img src="images/shequ128.jpg" alt="小米上的中国"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- E main -->
 		</div>
+	<script src="scripts/jquery-1.11.0.min.js"></script>
+	<script src="scripts/base.js"></script>
+	<script src="scripts/common.js"></script>
+	<script src="scripts/page.js"></script>
+	<!--[if lt IE 9]>
+	<script src="scripts/ie.js"></script>
+	<![endif]-->
 	</body>
 </html>
