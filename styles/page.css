@@ -16,6 +16,7 @@
 	left: 0;
 	top: 30px;
 	height: 61px;
+	z-index: 1;
 }
 .header .top .logo .logo-iconCommon-logo {
 	width: 143px;
@@ -57,10 +58,9 @@
 	left: 10px;
 	width: 96px;
 	height: 163px;
-	border-radius: 5px;
 	border: 3px solid #ededed;
 	background: #fff;
-	z-index: 9999;
+	z-index: 999;
 }
 .header .top .right .menu ul li .right-menu-langList li {
 	width: 97px;
@@ -98,43 +98,42 @@
 	min-height: 34px;
 	line-height: 34px;
 	border: 3px solid #dd4250;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	border-radius: 5px;
 	color: #ccd1d9;
 	text-indent: .5em;
 }
 .header .top .right .search .search-frame-btn {
 	position: absolute;
 	top: 3px;
-	right: 9px;
+	right: 3px;
 	width: 36px;
 	height: 34px;
 	border: none;
-	-webkit-border-top-right-radius: 5px;
-	-moz-border-top-right-radius: 5px;
-	-o-border-top-right-radius: 5px;
-	border-top-right-radius: 5px;
-	-webkit-border-bottom-right-radius: 5px;
-	-moz-border-bottom-right-radius: 5px;
-	-o-border-bottom-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-	background: #fff;
+	background: rgba(0, 0, 0, 0);
 	text-indent: -9999px;
+	cursor: pointer;
+	z-index: 1001;
 }
-.header .top .right .search .search-frame-btnFocus {
+.header .top .right .search .search-frame-btnDefault {
 	position: absolute;
 	top: 10px;
-	right: 16px;
+	right: 12px;
 	width: 17px;
 	height: 18px;
 	background-position: -223px -52px;
 	cursor: pointer;
+	z-index: 1000;
+}
+.header .top .right .search .search-frame-btnHover {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	width: 36px;
+	height: 34px;
+	background-position: -402px -12px;
 }
 .header .top .right .search .hot {
 	display: block;
-	width: 364px;
+	width: 370px;
 	color: #aab2bd;
 	text-align: left;
 }
@@ -162,8 +161,10 @@
 	line-height: 40px;
 	border: 3px solid #f5f7fa;
 	border-bottom: none;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
 	z-index: 1002;
 }
 .header .top .right .carts.selected {
@@ -192,7 +193,6 @@
 	height: 60px;
 	line-height: 60px;
 	border: 3px solid #ededed;
-	border-radius: 5px;
 	background: #fff;
 	z-index: 1001;
 }
@@ -237,10 +237,33 @@
 	height: 45px;
 	text-align: center;
 }
-.nav .clearfix ul li.selected {
+.nav .clearfix ul li.on {
 	background: #ed5466;
 }
-.nav .clearfix ul li:hover {
+.nav .clearfix ul .xmPhone .xmPhone-list {
+	position: absolute;
+	top: 45px;
+	left: 0;
+	width: 180px;
+	height: 125px;
+	font-size: 14px;
+	background: #fffbea;
+	z-index: 1000;
+}
+.nav .clearfix ul .xmPhone .xmPhone-list dd {
+	width: 180px;
+	height: 40px;
+}
+.nav .clearfix ul .xmPhone .xmPhone-list a {
+	width: 156px;
+	text-align: left;
+	color: #974C19;
+	border-bottom: 1px solid #ededed;
+}
+.nav .clearfix ul .xmPhone .xmPhone-list a:hover {
+	background: #fcf5de;
+}
+.nav .clearfix ul li a:hover {
 	background: #ed5466;
 }
 .nav .showList {
@@ -249,6 +272,7 @@
 	*left: 0;
 	width: 230px;
 	height: 580px;
+	z-index: 1000;
 }
 .nav .showList ul li {
 	position: relative;
@@ -260,14 +284,13 @@
 	text-align: left;
 	text-indent: 1.2em;
 }
+.nav .showList ul li.selected {
+	background: #FCF5DE;
+}
 .nav .showList ul li a {
 	display: block;
 	width: 230px;
 	height: 40px;
-	cursor: pointer;
-}
-.nav .showList ul li a:hover {
-	background: #fcf5de;
 }
 .nav .showList ul li i {
 	position: absolute;
@@ -277,6 +300,55 @@
 	height: 9px;
 	background-image: url(../images/icon-common.png);
 	background-position: -283px -55px;
+}
+.nav .showList ul .showList-list {
+	position: absolute;
+	top: -50px;
+	left: 230px;
+	width: 225px;
+	border: 3px solid #ededed;
+	background: #fff;
+}
+.nav .showList ul .showList-list dl dd img {
+	vertical-align: middle;
+	padding-right: 15px;
+}
+.nav .showList ul .showList-list dl dd a {
+	display: block;
+	width: 225px;
+	height: 53px;
+	line-height: 53px;
+}
+.nav .showList ul .showList-list .showList-iconRight {
+	position: absolute;
+	top: 58px;
+	left: -23px;
+	width: 0;
+	height: 0;
+	border: 10px solid rgba(0, 0, 0, 0);
+	border-right: 10px solid #ededed;
+}
+.nav .showList ul .showList-list .showList-iconRight i {
+	position: absolute;
+	top: -10px;
+	left: -6px;
+	width: 0;
+	height: 0;
+	border: 10px solid rgba(0, 0, 0, 0);
+	border-right: 10px solid #fff;
+	background-image: none;
+}
+.nav .showList .showList-list .showList-list-all a {
+	margin-left: 20px;
+	width: 185px;
+	border-top: 1px solid #ededed;
+}
+.nav .showList .showList-list .showList-list-all span {
+	display: inline-block;
+	margin: 0 27px -1px -7px;
+	width: 14px;
+	height: 14px;
+	background-position: -184px -32px;
 }
 .nav .showList ul li a:link, .nav .showList ul li a:visited {
 	color: #974c19;
@@ -298,13 +370,15 @@
 	float: left;
 	width: 950px;
 	height: 410px;
-	border-radius: 5px;
 	overflow: hidden;
 }
-.main .content .slide ul {
+.main .content .slide .slide-ul {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 2850px;
 }
-.main .content .slide ul li {
+.main .content .slide .slide-ul li {
 	float: left;
 }
 .main .content .slide .slide-left, .main .content .slide .slide-right {
@@ -319,10 +393,12 @@
 .main .content .slide .slide-left {
 	left: 0;
 	background-position: -84px 0;
+	cursor: pointer;
 }
 .main .content .slide .slide-right {
 	right: 0;
 	background-position: -123px 0;
+	cursor: pointer;
 }
 .main .content .slide .slide-left:hover {
 	background-position: 0 0;
@@ -341,5 +417,88 @@
 }
 .main .content .slideBottom .remove-ml {
 	margin-left: 0;
+}
+/* 新品上架 */
+.main .goods .goods-left {
+	float: left;
+	width: 950px;
+	height: 700px;
+	background: #fff;
+	overflow: hidden;
+}
+/* 特价商品 */
+.main .goods .goods-right {
+	float: right;
+	width: 230px;
+	height: 700px;
+}
+.main .goods .goods-right .specialOffer,
+.main .goods .goods-right .specialOffer a {
+	width: 230px;
+	height: 310px;
+	background: #fff;
+}
+.main .goods .goods-right .specialOffer strong {
+	font-size: 20px;
+	font-weight: bold;
+}
+/* 话费充值 */
+.main .goods .goods-right .recharge {
+	position: relative;
+	width: 230px;
+	height: 260px;
+	background: #fff;
+}
+.main .goods .goods-right .recharge .recharge-detail {
+	position: absolute;
+	top: 70px;
+	_top: 60px;
+	left: 15px;
+	_left: 0;
+}
+.main .goods .goods-right .specialOffer a:hover:before {
+	width: 220px;
+	height: 300px;
+}
+.main .goods .goods-right .recharge-phone,
+.main .goods .goods-right .recharge-amount,
+.main .goods .goods-right .recharge-price {
+	width: 196px;
+	padding-bottom: 12px;
+	text-align: left;
+}
+.main .goods .goods-right .recharge .recharge-phone input {
+	width: 196px;
+	height: 38px;
+	border: 1px solid #ededed;
+	text-indent: 0.5em;
+}
+.main .goods .goods-right .recharge .recharge-atOnce input {
+	width: 198px;
+	height: 40px;
+	border: none;
+	font-size: 16px;
+	color: #fff;
+	background: #f84858;
+	cursor: pointer;
+}
+/* 小米服务 */
+.main .goods .goods-right .xmServer {
+	width: 230px;
+	height: 110px;
+	background: #fff; 
+}
+.main .goods .goods-right .xmServer ul li {
+	padding-top: 10px;
+	_padding-top: 5px;
+	text-align: left;
+	text-indent: 2em;
+}
+/* 热门商品 */
+.main .hotgoods .hotgoods-right {
+	float: right;
+	width: 240px;
+	height: 650px;
+	background: #fff;
 }
 /* E main */

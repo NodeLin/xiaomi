@@ -7,38 +7,142 @@
 	background-image: url(../images/icon-common.png);
 	background-repeat: no-repeat;
 }
-.hot a:link, .hot a:visited, 
-.openBuy a:link, .openBuy a:visited {
-	color: #aab2bd;
-}
-.hot a:hover, .openBuy a:hover{
-	color: #000;
-	text-decoration: underline;
-}
-.header .top .right .menu ul li label a:hover,
-.header .top .right .menu ul li .right-menu-langList ul li a:hover {
-	color: #F84858;
-}
-.header .top .right .menu a:link, .header .top .right .menu a:visited, 
-.header .top .right .carts a:link, .header .top .right .carts a:visited {
-	color: #434a54;
-}
-.nav .clearfix .allWare a:link, .nav .clearfix .allWare a:visited,
-.nav .clearfix ul li a:link, .nav .clearfix ul li a:visited {
-	color: #fff;
+.header .top .right .menu ul li .right-menu-langList,
+.header .top .right .search .search-frame-input,
+.header .top .right .carts-num,
+.nav .showList ul .showList-list,
+.main .content .slide,
+.main .content .slideBottom .xs-border-common img,
+.main .goods .goods-left,
+.main .goods .goods-right,
+.main .goods .goods-right .recharge,
+.main .goods .goods-right .recharge .recharge-phone input,
+.main .goods .goods-right .recharge .recharge-atOnce input,
+.main .goods .goods-right .specialOffer,
+.main .goods .goods-right .specialOffer a,
+.main .goods .goods-right .xmServer {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
 }
 .main .content .slideBottom .xs-border-common {
 	float: left;
 	margin-left: 10px;
 }
 .main .content .slideBottom .xs-border-common a {
+	position: relative;
 	display: block;
 	width: 230px;
 	height: 150px;
 }
-.main .content .slideBottom .xs-border-common img {
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
+.common-h2 {
+	height: 50px;
+	border-bottom: 1px solid #ededed;
+	background: #fff;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+.common-h2 .title {
+	margin-left: 20px;
+	width: 70px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+}
+.goods-list {
+	float: left;
+	padding-left: 10px;
+	width: 940px;
+	height: 650px;
+	_overflow: hidden;
+	background: #fff;
+}
+.goods-list li {
+	float: left;
+	margin: 10px 10px 0 0;
+}
+.goods-list a, .main .goods .goods-right .specialOffer a {
+	position: relative;
+	display: block;
+}
+.goods-list .lg img, .goods-list .lg a {
+	width: 460px;
+	height: 310px;
+}
+.goods-list .md img, .goods-list .md a {
+	width: 225px;
+	height: 310px;
+}
+.goods-list .xs {
+	height: 310px;
+}
+.goods-list .xs img, .goods-list .xs a {
+	width: 225px;
+	height: 150px;
+	margin-bottom: 10px;
+}
+.goods-list .lg a:hover:before,
+.goods-list .md a:hover:before,
+.goods-list .xs a:hover:before,
+.main .goods .goods-right a:hover:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	border: 5px solid rgba(0, 0, 0, 0.05);
+}
+.goods-list .lg a:hover:before {
+	width: 450px;
+	height: 300px;
+}
+.goods-list .md a:hover:before {
+	width: 215px;
+	height: 300px;
+}
+.goods-list .xs a:hover:before {
+	width: 215px;
+	height: 140px;
+}
+.main .content .slideBottom .xs-border-common a:hover:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 220px;
+	height: 140px;
+	content: "";
+	border: 5px solid rgba(0, 0, 0, 0.05);
 	border-radius: 5px;
+	z-index: 1;
+}
+.hot a:link, .hot a:visited, 
+.openBuy a:link, .openBuy a:visited {
+	color: #aab2bd;
+}
+.header .top .right .menu a:link, .header .top .right .menu a:visited, 
+.header .top .right .carts a:link, .header .top .right .carts a:visited,
+.main .goods .goods-right .specialOffer a:link,
+.main .goods .goods-right .specialOffer a:visited,
+.main .goods .goods-right .xmServer a:link,
+.main .goods .goods-right .xmServer a:visited {
+	color: #434a54;
+}
+.nav .clearfix .allWare a:link, .nav .clearfix .allWare a:visited,
+.nav .clearfix ul li a:link, .nav .clearfix ul li a:visited {
+	color: #fff;
+}
+.hot a:hover, .openBuy a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+.header .top .right .menu ul li label a:hover,
+.header .top .right .menu ul li .right-menu-langList ul li a:hover,
+.nav .showList ul .showList-list dl dd a:hover,
+.header .top .right .carts a:hover,
+.main .goods .goods-right .specialOffer a:link label,
+.main .goods .goods-right .specialOffer a:visited label,
+.main .goods .goods-right .xmServer a:hover {
+	color: #F84858;
 }

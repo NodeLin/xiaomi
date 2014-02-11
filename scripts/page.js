@@ -1,21 +1,35 @@
 $(function() {
-	//搜索框获得,失去焦点动作
-	var search_input = $(".search-frame-input");
+	/* 搜索框获得,失去焦点动作 */
+	var search_input = $(".search-frame-input"),
+		txt_value;
 	search_input.focus(function() {
-		var txt_value = $(this).val();
+		txt_value = $(this).val();
 		if(txt_value == this.defaultValue) {
 			$(this).val("");
 		}
 	});
 	search_input.blur(function() {
-		var txt_value = $(this).val();
+		txt_value = $(this).val();
 		if(txt_value == ""){
 			$(this).val(this.defaultValue);
 		}
 	});
-	//切换语言jQuery
-	var lang = $("#right-menu-lang");
-	var langList = $(".right-menu-langList")
+
+	/* 搜索按钮样式 */
+	var search_btn = $(".search-frame-btn"),
+		search_btnDefault = $(".search-frame-btnDefault"),
+		search_btnHover = $(".search-frame-btnHover");
+	search_btn.hover(function (){
+		search_btnDefault.addClass("none");
+		search_btnHover.removeClass("none");
+	},function() {
+		search_btnDefault.removeClass("none");
+		search_btnHover.addClass("none");
+	});
+
+	/* 切换语言jQuery */
+	var lang = $("#right-menu-lang"),
+		langList = $(".right-menu-langList")
 	lang.mouseover(function() {
 		langList.slideDown();
 	});
@@ -24,9 +38,10 @@ $(function() {
 	},function(){
 		langList.hide();
 	});
-	//购物车
-	var carts = $(".carts");
-	var carts_num = $(".carts-num");
+
+	/* 购物车 */
+	var carts = $(".carts"),
+		carts_num = $(".carts-num");
 	carts.mouseover(function() {
 		$(this).addClass('selected');
 		carts_num.css("display", "block");
@@ -43,6 +58,45 @@ $(function() {
 		carts.removeClass('selected');
 		carts_num.css("display", "none");
 	});
+
+	/* 导航处小米手机 */
+	var xmPhone = $(".xmPhone");
+	var xmPhone_list = $(".xmPhone-list");
+	xmPhone.hover(function () {
+		xmPhone_list.removeClass("none");
+	},function() {
+		xmPhone_list.addClass("none");
+	});
+
+	/* 左侧商品分类 */
+	var showList_li = $(".showList ul li");
+		showList_li.hover(function (){
+			$(this).addClass("selected").children("div").css("display", "block");
+		},function() {
+			$(this).removeClass("selected").children("div").css("display", "none");
+		});
+
+	/* 轮播图 */
+	var slide_left = $(".slide-left"),
+		slide_right = $(".slide-right"),
+		slide_ul = $(".slide-ul");
+	slide_left.click(function () {
+		if(slide_ul.css("left") == "0px") {
+			slide_ul.animate({left: "-1900px"}, 300);
+		}
+		else if(slide_ul.css("left") < "0px") {
+			slide_ul.animate({left: "+=950px"}, 300);
+		}
+	});
+	slide_right.click(function () {	
+		if(slide_ul.css("left") > "-1900px") {
+			slide_ul.animate({left: "-=950px"}, 300);
+		}
+		else if(slide_ul.css("left") == "-1900px") {
+			
+			slide_ul.animate({left: "0px"}, 300);
+		}
+	});
 });
 
 /*
@@ -54,6 +108,7 @@ function inputHover() {
 		
 	}
 }
+
 //切换语言JavaScript
 function toggleLang () {
 	var lang = document.getElementById("right-menu-lang");
