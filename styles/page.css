@@ -485,7 +485,7 @@
 /* 小米服务 */
 .main .goods .goods-right .xmServer {
 	width: 230px;
-	height: 110px;
+	height: 109px;
 	background: #fff; 
 }
 .main .goods .goods-right .xmServer ul li {
@@ -500,5 +500,87 @@
 	width: 240px;
 	height: 650px;
 	background: #fff;
+}
+.main .hotgoods .hotgoods-right ul {
+	width: 230px;
+}
+/* 热评商品评价 */
+.main .hottalk {
+	height: 650px;
+	background: #fff;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.main .hottalk .hottalk-left {
+	float: left;
+	_display: inline;
+	padding-top: 10px;
+	margin-left: 10px;
+	height: 590px;
+	text-align: left;
+}
+.main .hottalk .hottalk-left .score {
+	padding: 20px 0 10px 0;
+	text-align: left;
+}
+.main .hottalk .hottalk-left .score .score-star {
+	display: inline-block;
+	width: 91px;
+	height: 11px;
+	_vertical-align: 0;
+	_padding-bottom: -3px;
+	background-image: url(../images/icon-star.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.main .hottalk .hottalk-left .msg strong {
+	font-weight: bold;
+	font-size: 14px;
+}
+/* 热评商品 */
+.main .hottalk .hottalk-right {
+	float: right;
+	width: 710px;
+	height: 600px;
+	border-left: 1px solid #ededed;
+}
+.main .hottalk .hottalk-right ul li {
+	float: left;
+	width: 236px;
+	height: 305px;
+}
+.main .hottalk .hottalk-right ul li img {
+	padding-top: 30px;
+}
+.main .hottalk .hottalk-right ul .hotBrBb {
+	border-right: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+}
+.main .hottalk .hottalk-right ul .hotBb {
+	border-bottom: 1px solid #ededed;
+}
+/* 特卖商品 */
+.main .specialWare {
+	height: 380px;
+	background: #fff;
+}
+.main .specialWare .specialWare-left {
+	float: left;
+	margin: 10px 0 0 10px;
+}
+.main .specialWare .specialWare-right {
+	float: right;
+	width: 710px;
+	border-left: 1px solid #ededed;
+	overflow: hidden;
+}
+.md-box {
+	float: left;
+	width: 236px;
+	height: 330px;
+	border-right: 1px solid #ededed;
+}
+.md-box-three {
+	border-right: none;
 }
 /* E main */
