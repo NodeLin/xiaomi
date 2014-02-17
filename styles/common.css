@@ -7,6 +7,10 @@
 	background-image: url(../images/icon-common.png);
 	background-repeat: no-repeat;
 }
+.icon-saleoff {
+	background-image: url(../images/icon-saleoff.png);
+	background-repeat: no-repeat;
+}
 .header .top .right .menu ul li .right-menu-langList,
 .header .top .right .search .search-frame-input,
 .header .top .right .carts-num,
@@ -21,7 +25,7 @@
 .main .goods .goods-right .specialOffer,
 .main .goods .goods-right .specialOffer a,
 .main .goods .goods-right .xmServer,
-.main .specialWare {
+.footer .footer-up .callService a {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-o-border-radius: 5px;
@@ -37,7 +41,7 @@
 	width: 230px;
 	height: 150px;
 }
-.common-h2, .hottalk {
+.common-h2, .hottalk, .main .specialWare {
 	height: 50px;
 	border-bottom: 1px solid #ededed;
 	background: #fff;
@@ -48,10 +52,10 @@
 }
 .common-h2 .title {
 	margin-left: 20px;
-	width: 70px;
+	width: 75px;
 	height: 50px;
 	line-height: 50px;
-	font-size: 16px;
+	font-size: 18px;
 	background: #fff;
 }
 .goods-list {
@@ -113,6 +117,49 @@
 	width: 215px;
 	height: 140px;
 }
+.md-box {
+	position: relative;
+	float: left;
+	padding: 30px 20px 20px;
+	width: 196px;
+	*width: 190px;
+	height: 280px;
+	font-size: 14px;
+	border-right: 1px solid #ededed;
+}
+.md-box .md-box-price {
+	padding-top: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #F84858;
+	text-align: left;
+}
+.md-box .md-box-originalPrice {
+	font-size: 12px;
+	text-align: left;
+	text-decoration: line-through;
+}
+.md-box .md-box-name {
+	text-align: left;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.md-box .md-box-flags {
+	position: absolute;
+	top: 0;
+	left: 20px;
+	width: 50px;
+	height: 40px;
+}
+.md-box .md-box-sale {
+	display: block;
+	width: 50px;
+	height: 40px;
+	background-position: -630px 0 ;
+}
+.md-box-three {
+	border-right: none;
+}
 .main .content .slideBottom .xs-border-common a:hover:before {
 	position: absolute;
 	top: 0;
@@ -135,11 +182,22 @@
 .main .goods .goods-right .xmServer a:link,
 .main .goods .goods-right .xmServer a:visited,
 .main .hottalk .hottalk-right a:link,
-.main .hottalk .hottalk-right a:visited {
+.main .hottalk .hottalk-right a:visited,
+.md-box .md-box-name a:link,
+.md-box .md-box-name a:visited,
+.footer .footer-up .nums a:link,
+.footer .footer-up .nums a:visited,
+.footer .footer-up .service a:link,
+.footer .footer-up .service a:visited,
+.footer .footer-down ul li a:link,
+.footer .footer-down ul li a:visited,
+.footer .footer-down .copyright a:link,
+.footer .footer-down .copyright a:visited {
 	color: #434a54;
 }
 .nav .clearfix .allWare a:link, .nav .clearfix .allWare a:visited,
-.nav .clearfix ul li a:link, .nav .clearfix ul li a:visited {
+.nav .clearfix ul li a:link, .nav .clearfix ul li a:visited,
+.footer .footer-up .callService a:link, .footer .footer-up .callService a:visited {
 	color: #fff;
 }
 .hot a:hover, .openBuy a:hover {
@@ -153,6 +211,11 @@
 .main .goods .goods-right .specialOffer a:link label,
 .main .goods .goods-right .specialOffer a:visited label,
 .main .goods .goods-right .xmServer a:hover,
-.main .hottalk .hottalk-right a:hover {
+.main .hottalk .hottalk-right a:hover,
+.md-box .md-box-name a:hover,
+.footer .footer-up .nums a:hover,
+.footer .footer-up .service a:hover,
+.footer .footer-down ul li a:hover,
+.footer .footer-down .copyright a:hover {
 	color: #F84858;
 }

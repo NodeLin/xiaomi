@@ -356,8 +356,8 @@
 /* E nav */
 /* S main */
 .main {
-	margin-top: 10px;
-	height: 580px;
+	margin: 10px auto;
+	height: 3038px;
 }
 .main .content {
 	position: relative;
@@ -566,6 +566,7 @@
 }
 .main .specialWare .specialWare-left {
 	float: left;
+	*display: inline;
 	margin: 10px 0 0 10px;
 }
 .main .specialWare .specialWare-right {
@@ -574,13 +575,160 @@
 	border-left: 1px solid #ededed;
 	overflow: hidden;
 }
-.md-box {
-	float: left;
-	width: 236px;
-	height: 330px;
-	border-right: 1px solid #ededed;
-}
-.md-box-three {
-	border-right: none;
+.main .specialWare .specialWare-right .md-box-three .md-box-sale {
+	background-position: -490px 0;
 }
 /* E main */
+/* S footer */
+.footer {
+	position: relative;
+	height: 240px;
+	background: #fff;
+}
+.footer .footer-up {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 1170px;
+	height: 220px;
+	background: #f5f7fa;
+}
+.footer .footer-up .nums {
+	height: 80px;
+	border-bottom: 1px solid #ededed;
+}
+.footer .footer-up .nums li {
+	float: left;
+	margin: 20px 0;
+	width: 290px;
+	height: 40px;
+	line-height: 22px;
+	border-right: 1px solid #ccd0d9;
+	text-align: center;
+}
+.footer .footer-up .nums a {
+	display: block;
+	width: 290px;
+	height: 40px;
+}
+.footer .footer-up .nums strong {
+	display: inline-block;
+	font-size: 42px;
+	padding: 10px 5px;
+}
+.footer .footer-up .nums span {
+	display: inline-block;
+	height: 40px;
+	text-align: left;
+}
+.footer .footer-up .nums label {
+	display: block;
+	width: 30px;
+	height: 20px;
+}
+.footer .footer-up .nums .nums-four {
+	border-right: none;
+}
+/* 所有服务 */
+.footer .footer-up .service {
+	float: left;
+	*display: inline;
+	margin: 25px 0 0 40px;
+	width: 880px;
+	_width: 905px;
+}
+.footer .footer-up .service ul {
+	float: left;
+	padding-right: 120px;
+}
+.footer .footer-up .service ul li {
+	padding-bottom: 10px;
+	height: 17px;
+	text-align: left;
+}
+.footer .footer-up .service ul .service-title {
+	font-weight: bold;
+}
+.footer .footer-up .service .prNone {
+	padding-right: 0;
+}
+.footer .footer-up .service .weibo i,
+.footer .footer-up .service .qqzone i,
+.footer .footer-up .service .weixin i {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+.footer .footer-up .service .weibo i {
+	background-position: -458px -2px;
+}
+.footer .footer-up .service .qqzone i {
+	background-position: -459px -24px;
+}
+.footer .footer-up .service .weixin i {
+	background-position: -461px -51px;
+}
+.footer .footer-up .follow a {
+	vertical-align: top;
+}
+/* 服务电话 */
+.footer .footer-up .servicePhone {
+	float: left;
+	margin-top: 25px;
+	width: 220px;
+}
+.footer .footer-up .servicePhone .phone i {
+	display: inline-block;
+	margin-right: 10px;
+	width: 31px;
+	height: 17px;
+	background-position: -177px -5px;
+}
+.footer .footer-up .callService a {
+	display: block;
+	width: 220px;
+	height: 40px;
+	line-height: 40px;
+	background: #85c143;
+}
+.footer .footer-up .callService i {
+	display: inline-block;
+	margin: 0 5px 5px 0;
+	width: 27px;
+	height: 27px;
+	vertical-align: middle;
+	background-position: -147px 0;
+}
+.footer .footer-up .callService a:hover {
+	background: #8cc84d;
+}
+/* 版权 */
+.footer .footer-down {
+	position: absolute;
+	top: 260px;
+	left: 250px;
+	height: 100px;
+}
+.footer .footer-down ul li {
+	float: left;
+	padding: 0 8px;
+	border-right: 1px solid #ededed;
+}
+.footer .footer-down ul .borderRnone {
+	border-right: none;
+}
+.footer .footer-down .copyright {
+	padding-top: 10px;
+	clear: both;
+}
+.footer .footer-down .fashao {
+	padding: 20px 0;
+}
+.footer .footer-down .believe {
+	padding: 10px 0 50px 0;
+}
+.footer .footer-down .believe img {
+	padding: 0 5px;
+}
+/* E footer */
